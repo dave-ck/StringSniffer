@@ -3,8 +3,8 @@ body {
 }
 
 span.footnote:before {
-  counter-increment: footnotecounter;
-  content: counter(footnotecounter);
+  /*counter-increment: footnotecounter;*/
+  /*content: counter(footnotecounter);*/
   position: relative;
   top: -0.4em;
 }
