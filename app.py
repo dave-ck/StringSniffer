@@ -1,4 +1,3 @@
-import json
 from flask import Flask, request
 from string_sniffer import match_string
 
