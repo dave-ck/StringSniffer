@@ -7,7 +7,11 @@ wordlists = {}
 def load_sets():
     for file_path in os.listdir("./wordlists"):
         file = open("./wordlists/" + file_path, "r", encoding="utf-8")
-        wordlists.update({file_path[:-4]: list(map(str.lower, file.read().split("\n")))})
+        file_text = file.read().strip()
+        word_list = map(str.lower, file_text.split("\n"))
+        word_list = map(str.strip, word_list)
+        word_list = list(set(word_list)) # put through set to eliminate duplicates
+        wordlists.update({file_path[:-4]: word_list})
 
 
 def match_string(input_string):
@@ -24,5 +28,3 @@ def match_string(input_string):
 
 
 load_sets()
-print(wordlists)
-print(match_string("Bonjour! Poutine au fromage? Assiette?"))

@@ -3,12 +3,15 @@ body {
 }
 
 span.footnote:before {
-  /*counter-increment: footnotecounter;*/
-  /*content: counter(footnotecounter);*/
-  position: relative;
-  top: -0.4em;
+    /*counter-increment: footnotecounter;*/
+    /*content: counter(footnotecounter);*/
+    position: relative;
+    top: -0.4em;
+
 }
 
 span.footnote {
     color: #24B1E6;
+
 }
+

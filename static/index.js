@@ -27,7 +27,7 @@ function setOut(baseText, hits) {
             for (let j = 0; j < hits[i].length; j++) {
                 htmlContents = htmlContents.slice(0, i + 3) +
                     "<sup>" +
-                    "<a href='#' data-toggle='tooltip' title='src: " + hits[i][j].source + "; mtch: " + hits[i][j].word + "'>" +
+                    "<a href='#' data-toggle='tooltip' title='Source: " + hits[i][j].source + "; Match: " + hits[i][j].word + "'>" +
                     "<span class='glyphicon glyphicon-asterisk'></span>" +
                     "</a></sup>" +
                     htmlContents.slice(i + 3);
